@@ -1,18 +1,13 @@
 function menuAnimate() {
 	const triggers = document.querySelectorAll('.has-children');
-	//console.log(triggers);
 	const background  = document.querySelector('.dropdown-bg');
-	//console.log(background);
 	const nav  = document.querySelector('.menu');
-	//console.log(nav);
 	function handleEnter() {
 		this.classList.add('trigger-enter');
     	console.log(this);
 		setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
 		background.classList.add('open');
-		//console.log(background);
 		const dropdown = this.querySelector('.dropdown');
-		//console.log(dropdown);
 		const dropdownCoords = dropdown.getBoundingClientRect();
 		console.log(dropdownCoords);
 		const navCoords = nav.getBoundingClientRect();
@@ -36,8 +31,5 @@ function menuAnimate() {
 	triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
 }
 
-var $ = require("jquery");
-$(document).ready(function(){
-	menuAnimate();
-});
+menuAnimate();
 
