@@ -283,6 +283,8 @@
           padding: 10px 10px 0px;
           margin: 0;
           position: static; }
+      .header ul.first-level li ul.about {
+        width: 150px; }
       .header ul.first-level li ul.services {
         width: 110px; }
       .header ul.first-level li ul.works {
