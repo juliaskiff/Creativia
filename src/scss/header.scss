@@ -22,7 +22,8 @@
 			width: 100px;
 		    height: 1px;
 		    position: absolute;
-		    top: 70px;
+		    top: 80px;
+		    left: 10%;
 		    background: #ffffff;
 		    transition: all 0.3s, opacity 0.1s, transform 0.2s;
 		    transform-origin: 50% 0;
@@ -57,14 +58,37 @@
 
 		li {
 			margin-top: 25px;
+			margin-bottom: 17px;
 			position: relative;
-			
+
+			&:after {
+				content: "";
+				position: absolute;
+				top: -24px;
+				left: 50%;
+				margin-left: -15px;
+				width: 0px;
+				height: 2px;
+				background-color: #ff0036;
+				opacity: 0;
+				transition: all .8s ease-in-out;
+			}
+		
+			&:hover {
+				&::before, &::after {
+					width: 30px;
+					opacity: 1;
+					transition: all .5s ease-in-out;
+				}
+			}
+
 			a {
 				color: #a4a4a4;
 				text-transform: uppercase;
 				line-height: 25px;
 				font-size: 16px;
 				margin: 0px 15px;
+
 				&:hover {
 					color: #ffff;
 				}
@@ -72,6 +96,7 @@
 					color: #ffff;
 				}
 			}
+			
 			ul.dropdown {
 				color: black;
 				background-color: #ffffff;
@@ -165,7 +190,7 @@
 				    -o-transform: translate3d(0, -50%, 0);
 				    transform: translate3d(0, -50%, 0);
 				    left: 0px;
-				    right: 0px;
+				    right: 10px;
 				    height: 2px;
 				    background: #fff;
 			    	&::before, &::after {
@@ -241,5 +266,13 @@ body.nav-open {
 @media  only screen and (min-width: 991px) {
 	.mobile-visible {
 	    display: none !important;
+	}
+}
+
+@media  only screen and (min-width: 1200px) {
+	.header {
+		nav.menu {
+			margin-left: 20%;
+		}
 	}
 }

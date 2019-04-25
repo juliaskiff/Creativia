@@ -10489,7 +10489,7 @@ $(document).ready(function(){
 function menuAnimate() {
 	const triggers = document.querySelectorAll('.has-children');
 	const background  = document.querySelector('.dropdown-bg');
-	const nav  = document.querySelector('.menu');
+	const nav  = document.querySelector('.first-level');
 	function handleEnter() {
 		this.classList.add('trigger-enter');
     	//console.log(this);
@@ -10503,7 +10503,7 @@ function menuAnimate() {
 		const coords = {
 		  height: dropdownCoords.height,
 		  width: dropdownCoords.width,
-		  top: dropdownCoords.top - navCoords.top - 70,
+		  top: dropdownCoords.top - navCoords.top - 80,
 		  left: dropdownCoords.left - navCoords.left
 		};
 		//console.log(coords);
@@ -10524,6 +10524,8 @@ function mobileNavOpen() {
 		$('body').toggleClass('nav-open');
 	})
 }
+
+
 
 /***/ }),
 /* 3 */

@@ -226,7 +226,8 @@
       width: 100px;
       height: 1px;
       position: absolute;
-      top: 70px;
+      top: 80px;
+      left: 10%;
       background: #ffffff;
       transition: all 0.3s, opacity 0.1s, transform 0.2s;
       transform-origin: 50% 0;
@@ -255,7 +256,23 @@
     justify-content: space-between; }
     .header ul.first-level li {
       margin-top: 25px;
+      margin-bottom: 17px;
       position: relative; }
+      .header ul.first-level li:after {
+        content: "";
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        margin-left: -15px;
+        width: 0px;
+        height: 2px;
+        background-color: #ff0036;
+        opacity: 0;
+        transition: all .8s ease-in-out; }
+      .header ul.first-level li:hover::before, .header ul.first-level li:hover::after {
+        width: 30px;
+        opacity: 1;
+        transition: all .5s ease-in-out; }
       .header ul.first-level li a {
         color: #a4a4a4;
         text-transform: uppercase;
@@ -341,7 +358,7 @@
           -o-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
           left: 0px;
-          right: 0px;
+          right: 10px;
           height: 2px;
           background: #fff; }
           .mobile-header .mobile-header-top a.nav-toggle button.hamburger span::before, .mobile-header .mobile-header-top a.nav-toggle button.hamburger span::after {
@@ -395,6 +412,10 @@ body.nav-open .mobile-header .mobile-content {
 @media only screen and (min-width: 991px) {
   .mobile-visible {
     display: none !important; } }
+
+@media only screen and (min-width: 1200px) {
+  .header nav.menu {
+    margin-left: 20%; } }
 
 section.page-hero .hero-title, section.page-hero .hero-desc {
   position: absolute;
@@ -462,11 +483,10 @@ section.page-hero .slider .slick-next {
 
 @media only screen and (min-width: 1200px) {
   section.page-hero .hero-title {
-    top: 45%;
+    top: 50%;
     font-size: 30px; }
   section.page-hero .hero-desc {
-    top: 55%;
-    font-size: 18px; } }
+    top: 60%; } }
 
 body {
   margin: 0;
