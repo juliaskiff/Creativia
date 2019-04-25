@@ -13,6 +13,10 @@
 body {
 	margin: 0;
 	overflow-x: hidden;
+	font-size: 16px;
+    letter-spacing: normal;
+    line-height: 28px;
+    
 	ul  {
 		padding: 0;
 		margin: 0;
@@ -29,5 +33,7 @@ body {
 
 
 @media only screen and (min-width: 1200px) {
-	
+	font-size: 18px;
+    line-height: 30px;
+    letter-spacing: normal;
 }

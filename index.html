@@ -9,9 +9,37 @@
 </head>
 <script type="text/javascript" src="dist/bundle.js"></script>
 <body>
-	<header class="header">
+	<section class="mobile-header mobile-visible">
+		<div class="mobile-header-top">
+			<a href="#" class="logo">
+				<img src="src/img/logo.png" alt="Creativia logo">
+			</a>
+			<a class="nav-toggle">
+				<button class="hamburger"><span></span></button>
+			</a>
+		</div>
+		<div class="mobile-content">
+			<nav class="menu">
+				<ul class="mobile-nav">
+					<li><a href="#">Home</a></li>
+					<li class="has-children">
+						<a href="#">About us</a>
+					</li>
+					<li class="has-children">
+						<a href="#">Services</a>
+					</li>
+					<li class="has-children">
+						<a href="#">Works</a>
+					</li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+	<header class="header mobile-hidden">
 		<div class="logo">
-			<img src="src/img/logo.png" alt="Creativia logo">
+			<a href="#"><img src="src/img/logo.png" alt="Creativia logo"></a>
 		</div>
 		<nav class="menu">
 			<div class="dropdown-bg">
@@ -50,7 +78,7 @@
 	</header>
 	<section class="section page-hero">
 		<div class="hero-title">why <span>creativia?</span></div>
-		<div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum assumenda doloremque, dicta minima magni minus, qui maxime perspiciatis nobis sequi cumque quia! Eius itaque quos cum unde! Cupiditate doloribus quas maiores qui dignissimos! Omnis ut itaque, ab nesciunt iste repellendus aut, dolor natus numquam architecto officia obcaecati possimus, placeat.</div>
+		<div class="hero-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum assumenda doloremque, dicta minima magni minus, qui maxime perspiciatis nobis sequi cumque quia! Eius itaque quos cum unde! </div>
 		<div class="slider">
 			<div class="single-slide"> <img src="src/img/slide1.png" alt=""></div>
 		</div>

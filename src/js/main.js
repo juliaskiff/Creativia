@@ -2,6 +2,7 @@
 var $ = require("jquery");
 $(document).ready(function(){
 	menuAnimate();
+	mobileNavOpen();
 });
 
 function menuAnimate() {
@@ -35,4 +36,10 @@ function menuAnimate() {
 	}
 	triggers.forEach(trigger => trigger.addEventListener('mouseenter', handleEnter));
 	triggers.forEach(trigger => trigger.addEventListener('mouseleave', handleLeave));
+}
+
+function mobileNavOpen() {
+	$('.nav-toggle').on('click', function(){
+		$('body').toggleClass('nav-open');
+	})
 }

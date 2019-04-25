@@ -4,12 +4,11 @@ section.page-hero {
 		position: absolute;
 		left: 50%;
 		color: #fff;
-		z-index: 999;
 	}
 	.hero-title {
-		top: 35%;
-		margin-left: -102px;
-		font-size: 30px;
+		top: 22%;
+		margin-left: -68px;
+		font-size: 22px;
 		font-weight: bold;
 		font-family: 'Raleway', sans-serif;
 		span {
@@ -17,12 +16,10 @@ section.page-hero {
 		}
 	}
 	.hero-desc {
-		top: 45%;
-		margin-left: -400px;
-		width: 800px;
+		top: 30%;
+		margin-left: -145px;
+		width: 290px;
 		text-align: center;
-		font-size: 16px;
-		line-height: 22px;
 		font-family: 'Lato', sans-serif;
 	}
 	.slider {
@@ -30,7 +27,8 @@ section.page-hero {
 		.single-slide {
 			max-width: 100%;
 			img {
-				min-width: 100%;
+				min-width: 270%;
+				margin-left: -80%;
 			}
 		}
 		.slick-arrow {
@@ -52,5 +50,32 @@ section.page-hero {
 			right: 10%;
 		}
 		
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	section.page-hero {
+		.slider {
+			.single-slide {
+
+			}
+		}
+	}
+}
+@media only screen and (min-width: 992px) {
+	
+}
+@media only screen and (min-width: 1200px) {
+	section.page-hero {
+		.hero-title {
+			top: 35%;
+			font-size: 30px;
+		}
+		.hero-desc {
+			top: 41%;
+		}
+		.slider {
+			
+		}
 	}
 }
