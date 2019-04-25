@@ -27,6 +27,7 @@ section.page-hero {
 		.single-slide {
 			max-width: 100%;
 			img {
+				max-width: 270%;
 				min-width: 270%;
 				margin-left: -80%;
 			}
@@ -55,24 +56,44 @@ section.page-hero {
 
 @media only screen and (min-width: 768px) {
 	section.page-hero {
+		.hero-desc {
+			width: 80%;
+			margin-left: -307px;
+		}
 		.slider {
 			.single-slide {
-
+				img {
+					max-width: 100%;
+					min-width: 100%;
+					margin-left: 0;
+				}
 			}
 		}
 	}
 }
 @media only screen and (min-width: 992px) {
-	
+	section.page-hero {
+		.hero-title {
+			font-size: 30px;
+			margin-left: -102px;
+			top: 40%;
+		}
+		.hero-desc {
+			width: 792px;
+			margin-left: -396px;
+			top: 50%;
+		}
+	}
 }
 @media only screen and (min-width: 1200px) {
 	section.page-hero {
 		.hero-title {
-			top: 35%;
+			top: 45%;
 			font-size: 30px;
 		}
 		.hero-desc {
-			top: 41%;
+			top: 55%;
+			font-size: 18px;
 		}
 		.slider {
 			

@@ -11,12 +11,13 @@
 	display: flex;
 	.logo {
 		z-index: 999;
-		margin-left: 8%;
+		margin-left: 15px;
 	}
 	.menu {
 		position: relative;
     	perspective: 600px;
-		margin-left: 10%;
+    	margin-left: 10%;
+		
 		.dropdown-bg {
 			width: 100px;
 		    height: 1px;
